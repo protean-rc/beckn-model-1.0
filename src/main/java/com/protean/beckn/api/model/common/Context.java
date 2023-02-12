@@ -7,8 +7,10 @@ import lombok.Data;
 @Data
 public class Context {
 	private String domain;
-	private String country;
-	private String city;
+	//private String country;
+	//private String city;
+	private ContextLocation location;
+	
 	private String action;
 	
 	@JsonProperty("core_version")
