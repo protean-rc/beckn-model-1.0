@@ -19,8 +19,8 @@ public class Item {
     @JsonProperty("xinput_required")
     private XInputRequired xinputRequired;
     private Time time; 
-    private boolean matched;
-    private boolean related;
-    private boolean recommended;
+    //private boolean matched;
+    //private boolean related;
+    //private boolean recommended;
     private List<TagData> tags;
 }

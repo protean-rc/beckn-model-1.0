@@ -13,8 +13,8 @@ public class Context {
 	
 	private String action;
 	
-	@JsonProperty("core_version")
-	private String coreVersion;
+	@JsonProperty("version")
+	private String version;
 	
 	@JsonProperty("bap_id")
 	private String bapId;
