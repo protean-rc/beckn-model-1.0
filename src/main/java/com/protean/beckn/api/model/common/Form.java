@@ -10,11 +10,11 @@ public class Form {
 	private String url;
 	
 	@JsonProperty("data")
-	private String data;
+	private Object data;
 	
 	@JsonProperty("mime_type")
 	private String mimeType;
 	
 	@JsonProperty("submission_id")
-	private String submissionId;
+	private String submissionId;	//UUID
 }

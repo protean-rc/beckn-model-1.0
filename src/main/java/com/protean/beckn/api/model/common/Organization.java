@@ -5,6 +5,8 @@ import lombok.Data;
 @Data
 public class Organization {
 	private Descriptor descriptor;
-    private Address address;
+    private String address;
+    private State state;
+    private City city;
     private Contact contact;
 }

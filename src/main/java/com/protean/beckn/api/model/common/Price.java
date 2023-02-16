@@ -6,10 +6,10 @@ import lombok.Data;
 public class Price {
 	private String currency;
 	private String value;
-//	private double estimated_value;
-//	private double computed_value;
-//	private double listed_value;
-//	private double offered_value;
-//	private double minimum_value;
-//	private double maximum_value;
+	private String estimated_value;
+	private String computed_value;
+	private String listed_value;
+	private String offered_value;
+	private String minimum_value;
+	private String maximum_value;
 }

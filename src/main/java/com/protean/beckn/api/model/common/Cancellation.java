@@ -6,7 +6,7 @@ import lombok.Data;
 public class Cancellation {
 	
 	private String time;
-	private Person cancelled_by;
+	private String cancelled_by;
 	private Option reason;
 	private Descriptor additional_description;
 }

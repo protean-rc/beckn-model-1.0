@@ -9,18 +9,36 @@ import lombok.Data;
 @Data
 public class Item {
 	private String id;
+	
+	@JsonProperty("parent_item_id")
 	private String parentItemId;
+	
     private Descriptor descriptor;
+    
+    private String manufacturer;
+    
     private Price price;
-    private String categoryId;
-    private String fulfillmentId;
-    private String locationId;
-    private String paymentId;
-    @JsonProperty("xinput_required")
-    private XInputRequired xinputRequired;
+    
+    @JsonProperty("category_ids")
+    private List<String> categoryIds;
+    
+    @JsonProperty("fulfillment_ids")
+    private List<String> fulfillmentIds;
+    
+    @JsonProperty("location_ids")
+    private List<String> locationIds;
+    
+    @JsonProperty("payment_ids")
+    private List<String> paymentIds;
+    
+    @JsonProperty("add_ons")
+    private List<AddOn> addOns;
+    
+    private XInput xinput;
+    
     private Time time; 
-    //private boolean matched;
-    //private boolean related;
-    //private boolean recommended;
-    private List<TagData> tags;
+    
+    private boolean rateable;
+    
+    private List<TagGroup> tags;
 }

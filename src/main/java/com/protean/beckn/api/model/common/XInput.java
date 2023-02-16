@@ -8,4 +8,8 @@ import lombok.Data;
 public class XInput {
 	@JsonProperty("form")
 	private Form form;
+	
+	private boolean required;
+	
+	private Object form_submission;
 }

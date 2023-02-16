@@ -5,11 +5,11 @@ import lombok.Data;
 @Data
 public class CancellationTerm {
 
-	private boolean refund_eligible;
-	private boolean return_eligible;
-	private boolean replacement_eligible;
-	private State fulfillment_state;
+	private FulfillmentState fulfillment_state;
+	private boolean reason_required;
 	private Time cancel_by;
 	private Fee cancellation_fee;
+	private XInput xinput;
 	private MediaFile external_ref;
+	
 }

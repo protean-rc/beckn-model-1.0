@@ -6,18 +6,15 @@ import lombok.Data;
 
 @Data
 public class PaymentParams {
+	@JsonProperty("transaction_id")
 	private String transactionId;
+	
 	private String amount;
-	private String mode;
-	private String vpa;
-
-	@JsonProperty("additionalProp1")
-	private String additionalProp1;
-
-	@JsonProperty("additionalProp2")
-	private String additionalProp2;
-
-	@JsonProperty("additionalProp3")
-	private String additionalProp3;
-
+	private String currency;
+	private String bank_code;
+	private String bank_account_number;
+	private String virtual_payment_address;
+	private String source_bank_code;
+	private String source_bank_account_number;
+	private String source_virtual_payment_address;
 }

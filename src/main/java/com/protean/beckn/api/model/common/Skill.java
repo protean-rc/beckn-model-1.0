@@ -3,8 +3,9 @@ package com.protean.beckn.api.model.common;
 import lombok.Data;
 
 @Data
-public class TagDataList {
-	private String code;
+public class Skill {
+	
 	private String name;
-	private String value;
+	private String code;
+
 }

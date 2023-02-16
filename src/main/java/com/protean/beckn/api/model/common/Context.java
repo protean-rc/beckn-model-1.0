@@ -7,9 +7,8 @@ import lombok.Data;
 @Data
 public class Context {
 	private String domain;
-	//private String country;
-	//private String city;
-	private ContextLocation location;
+
+	private Location location;
 	
 	private String action;
 	
@@ -38,17 +37,4 @@ public class Context {
 	private String key;
 	private String ttl;
 
-    /*
-     * required:
-      - domain
-      - action
-      - country
-      - city
-      - core_version
-      - transaction_id
-      - message_id
-      - bap_id
-      - bap_uri
-      - timestamp 
-     */
 }

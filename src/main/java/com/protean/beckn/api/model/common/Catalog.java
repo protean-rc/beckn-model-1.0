@@ -10,23 +10,25 @@ import lombok.Data;
 
 @Data
 public class Catalog {
-	@JsonProperty("bpp/descriptor")
+	@JsonProperty("descriptor")
 	private Descriptor bppDescriptor;
 
-	@JsonProperty("bpp/categories")
-	private Set<Category> bppCategories;
+	/*@JsonProperty("categories")
+	private Set<Category> bppCategories;*/
 
-	@JsonProperty("bpp/fulfillments")
+	@JsonProperty("fulfillments")
 	private List<Fulfillment> bppFulfillments;
 
-	/*
-	 * @JsonProperty("bpp/payments") private List<Payment> bppPayments;
-	 * 
-	 * @JsonProperty("bpp/offers") private List<Offer> bppOffers;
-	 */
+	@JsonProperty("payments")
+	private List<Payment> bppPayments;
+	
+	@JsonProperty("offers")
+	private List<Offer> bppOffers;
 
-	@JsonProperty("bpp/providers")
+	@JsonProperty("providers")
 	private List<Provider> bppProviders;
 
 	private String exp;
+	
+	private String ttl;
 }
