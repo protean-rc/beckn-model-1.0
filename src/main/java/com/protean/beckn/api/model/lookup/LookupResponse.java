@@ -44,7 +44,7 @@ public class LookupResponse implements Serializable {
 	
 	private String status;
 	
-	@JsonProperty("unique_key_id")
+	@JsonProperty("ukId")
 	private String uniqueKeyId;
 
 }
